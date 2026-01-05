@@ -1,0 +1,248 @@
+:root{
+  --bg: linear-gradient(180deg, #eef6fb 0%, #ffffff 60%, #f4f9fc 100%);
+  --panel: #ffffff;
+  --line: rgba(0,0,0,.08);
+
+  --text: #0f172a;
+  --muted: #64748b;
+
+  --primary: #0ea5e9;
+  --primary-soft: rgba(14,165,233,.12);
+
+  --shadow: 0 14px 30px rgba(15,23,42,.10);
+  --r: 16px;
+}
+
+*{ box-sizing: border-box; }
+
+html, body{
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  background-attachment: fixed;
+  color: var(--text);
+  font-family: Calibri, "Segoe UI", Arial, sans-serif;
+}
+
+a{ color: inherit; text-decoration: none; }
+.container{ width: min(1100px, 92vw); margin: 0 auto; }
+
+.topbar{
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(191, 215, 236, 0.9);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--line);
+}
+
+.topbar-inner{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 0;
+}
+
+.brand-title{ font-size: 20px; font-weight: 800; letter-spacing: .3px; }
+.brand-sub{ font-size: 13px; color: var(--muted); margin-top: 2px; }
+
+.nav{ display: flex; gap: 14px; }
+.nav a{
+  font-size: 15px;
+  padding: 8px 14px;
+  color: var(--muted);
+  border-radius: 999px;
+}
+.nav a:hover{ background: var(--primary-soft); color: var(--primary); }
+
+.hero{
+  position: relative;
+  min-height: 70vh;
+  display: grid;
+  align-items: end;
+  overflow: hidden;
+}
+
+.hero-bg{
+  position: absolute;
+  inset: 0;
+  background-image: url("assets/road-ruins-Lebanon-Tyre.webp");
+  background-size: cover;
+  background-position: center;
+
+  /* 🔥 COLOR BOOST */
+  filter: saturate(2.4) contrast(1.15) brightness(0.5);
+  transform: scale(1.05);
+}
+
+
+.hero-overlay{
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(255,255,255,.35),
+    rgba(255,255,255,.78) 65%,
+    #ffffff 100%
+  );
+}
+
+.hero-content{
+  position: relative;
+  padding: 80px 0 60px;
+}
+
+.hero h1{
+  font-size: clamp(34px, 4.5vw, 60px);
+  margin: 0 0 14px;
+}
+
+.hero p{
+  max-width: 70ch;
+  font-size: clamp(16px, 1.5vw, 19px);
+  line-height: 1.65;
+  color: #334155;
+}
+
+.cta{
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin: 22px 0 16px;
+}
+
+.btn{
+  padding: 12px 20px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: #ffffff;
+  color: var(--text);
+  font-weight: 700;
+  box-shadow: var(--shadow);
+  cursor: pointer;
+}
+.btn:hover{ transform: translateY(-1px); }
+
+.btn.primary{
+  background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+  color: white;
+  border: none;
+}
+.btn.small{ padding: 9px 14px; font-size: 13px; }
+
+.chips{ display: flex; gap: 10px; flex-wrap: wrap; margin-top: 10px; }
+.chip{
+  padding: 7px 14px;
+  border-radius: 999px;
+  font-size: 13px;
+  background: #e0f2fe;
+  color: #0369a1;
+}
+
+.tiny-note{ margin-top: 10px; font-size: 12px; color: var(--muted); }
+
+.section{ padding: 64px 0; }
+.section.alt{ background: #f8fafc; }
+
+.section-head h2{ font-size: 32px; margin: 0 0 10px; }
+.section-head p{ color: var(--muted); margin-bottom: 26px; }
+
+.grid-3{ display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+.grid-2{ display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; }
+
+.card{
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: var(--r);
+  padding: 26px;
+  box-shadow: var(--shadow);
+}
+
+.card h3{ margin-top: 0; margin-bottom: 12px; font-size: 20px; }
+.card p, .card li{ color: #334155; line-height: 1.65; }
+.card ul{ padding-left: 18px; }
+
+.links{ display: flex; gap: 12px; flex-wrap: wrap; margin-top: 10px; }
+.textlink{
+  font-size: 14px;
+  color: var(--primary);
+  border-bottom: 1px dashed var(--primary);
+}
+.textlink:hover{ opacity: .85; }
+
+.map-card{
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: var(--r);
+  padding: 16px;
+  box-shadow: var(--shadow);
+}
+.map{ height: 440px; border-radius: calc(var(--r) - 6px); overflow: hidden; }
+.map-actions{ display: flex; gap: 12px; flex-wrap: wrap; margin-top: 14px; }
+.tiny-muted{ margin-top: 10px; font-size: 12px; color: var(--muted); }
+
+/* Contact Form */
+.form{ display: grid; gap: 12px; margin-top: 10px; }
+.form label{ display: grid; gap: 6px; font-weight: 700; font-size: 14px; color: #0f172a; }
+
+.form input, .form textarea{
+  width: 100%;
+  padding: 12px 12px;
+  border: 1px solid rgba(0,0,0,.12);
+  border-radius: 12px;
+  outline: none;
+  font-family: inherit;
+  font-size: 15px;
+  background: #ffffff;
+}
+
+.form input:focus, .form textarea:focus{
+  border-color: rgba(14,165,233,.6);
+  box-shadow: 0 0 0 4px rgba(14,165,233,.12);
+}
+
+.status{
+  min-height: 18px;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.status.ok{ color: #067647; }
+.status.err{ color: #b42318; }
+
+.note-box{
+  margin-top: 14px;
+  padding: 14px;
+  border-radius: 14px;
+  background: rgba(14,165,233,.10);
+  border: 1px solid rgba(14,165,233,.18);
+  color: #0f172a;
+}
+
+.footer{
+  padding: 32px 0;
+  border-top: 1px solid var(--line);
+  background: #ffffff;
+}
+
+.footer-inner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.footer-title{ font-weight: 800; }
+.footer-sub{ font-size: 13px; color: var(--muted); }
+.footer-links a{
+  padding: 8px 14px;
+  border-radius: 999px;
+  color: var(--muted);
+}
+.footer-links a:hover{ background: var(--primary-soft); color: var(--primary); }
+
+@media (max-width: 900px){
+  .grid-3, .grid-2{ grid-template-columns: 1fr; }
+  .nav{ display: none; }
+}

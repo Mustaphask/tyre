@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tyre (Sour), Lebanon — Guide</title>
+  <meta name="description" content="Tyre / Sour city guide: popular areas, beaches, and how to reach — with a contact form." />
+
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Leaflet (OpenStreetMap) -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""
+  />
+</head>
+
+<body>
+  <header class="topbar" id="top">
+    <div class="container topbar-inner">
+      <div class="brand">
+        <div>
+          <div class="brand-title">Tyre / صور</div>
+          <div class="brand-sub">South Lebanon • Coast, history, and beaches</div>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a href="#areas">Areas</a>
+        <a href="#beaches">Beaches</a>
+        <a href="#reach">How to reach</a>
+        <a href="#map">Map</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" aria-label="Hero section">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="hero-overlay" aria-hidden="true"></div>
+
+    <div class="container hero-content">
+      <h1>Tyre (Sour), Lebanon</h1>
+      <p>
+        A coastal city famous for wide sandy beaches and rich archaeological heritage.
+        This page highlights key areas, beaches, and how to reach Tyre — plus a quick way to contact us.
+      </p>
+
+      <div class="cta">
+        <a class="btn primary" href="#beaches">Explore beaches</a>
+        <a class="btn" href="#contact">Send a message</a>
+      </div>
+
+      <div class="chips">
+        <span class="chip">Beach vibes</span>
+        <span class="chip">Historic sites</span>
+        <span class="chip">Food & cafés</span>
+      </div>
+
+      <p class="tiny-note" id="heroNote"></p>
+    </div>
+  </section>
+
+  <!-- QUICK FACTS -->
+  <section class="section">
+    <div class="container grid-3">
+      <div class="card">
+        <h3>Why visit?</h3>
+        <p>Mix a beach day with ruins, old streets, cafés, and sunset views by the sea.</p>
+      </div>
+
+      <div class="card">
+        <h3>Best season</h3>
+        <p>Late spring to early autumn for swimming. Winter is perfect for calm walks.</p>
+      </div>
+
+      <div class="card">
+        <h3>Local name</h3>
+        <p>Locals commonly say <strong>Sour (صور)</strong>. You’ll see both “Tyre” and “Sour”.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- AREAS -->
+  <section class="section alt" id="areas">
+    <div class="container">
+      <div class="section-head">
+        <h2>Popular Areas</h2>
+        <p>Good starting points for walking, food, history, and sea views.</p>
+      </div>
+
+      <div class="grid-2">
+        <div class="card">
+          <h3>Al-Mina (peninsula & harbor vibe)</h3>
+          <ul>
+            <li>Seaside walks and cafés</li>
+            <li>Coastal views and relaxing evenings</li>
+            <li>Great for photos at sunset</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>El-Bass (archaeological zone)</h3>
+          <ul>
+            <li>Major ruins area</li>
+            <li>Great morning visit in summer</li>
+            <li>Comfortable shoes recommended</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Old streets & local markets</h3>
+          <ul>
+            <li>Local shops and snacks</li>
+            <li>Nice evening stroll</li>
+            <li>Authentic city feel</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Ras El Ain area</h3>
+          <ul>
+            <li>Quieter vibe</li>
+            <li>Green spots and calm breaks</li>
+            <li>Nice stop on the way in/out</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BEACHES -->
+  <section class="section" id="beaches">
+    <div class="container">
+      <div class="section-head">
+        <h2>Beaches</h2>
+        <p>From wide sandy stretches to lively summer spots.</p>
+      </div>
+
+      <div class="grid-2">
+        <div class="card">
+          <h3>Nature-style sandy coast</h3>
+          <ul>
+            <li>Long walks on the sand</li>
+            <li>Quieter atmosphere</li>
+            <li>Perfect for sunrise / sunset</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Public beach strip</h3>
+          <ul>
+            <li>Busy in summer</li>
+            <li>Good for groups</li>
+            <li>Arrive early on weekends</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Seaside rocks & viewpoints</h3>
+          <ul>
+            <li>Best for photos</li>
+            <li>Sea breeze and relaxing vibes</li>
+            <li>Great for winter walks too</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Beach + history combo</h3>
+          <ul>
+            <li>Morning: ruins</li>
+            <li>Afternoon: beach</li>
+            <li>Evening: food & cafés</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW TO REACH -->
+  <section class="section alt" id="reach">
+    <div class="container">
+      <div class="section-head">
+        <h2>How to reach Tyre</h2>
+        <p>Quick route buttons + typical driving approach.</p>
+      </div>
+
+      <div class="grid-2">
+        <div class="card">
+          <h3>By car</h3>
+          <ul>
+            <li>Fastest and most convenient option</li>
+            <li>Routes typically pass through Saida (Sidon) depending on traffic</li>
+            <li>Plan extra time on summer weekends</li>
+          </ul>
+
+          <div class="links">
+            <a id="btnBeirutToTyre" class="textlink" target="_blank" rel="noopener">Open Beirut → Tyre in Google Maps</a>
+            <a id="btnOSMTyre" class="textlink" target="_blank" rel="noopener">Open Tyre in OpenStreetMap</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>By service / shared taxi</h3>
+          <ul>
+            <li>Availability depends on time and season</li>
+            <li>Ask for “Sour / صور” as destination</li>
+            <li>Confirm drop-off point (center, beach, or hotel)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAP -->
+  <section class="section" id="map">
+    <div class="container">
+      <div class="section-head">
+        <h2>Interactive Map</h2>
+        <p>Click markers for notes. Use buttons to jump to key places.</p>
+      </div>
+
+      <div class="map-card">
+        <div id="mapBox" class="map"></div>
+
+        <div class="map-actions">
+          <button class="btn small" id="centerTyre">Center on Tyre</button>
+          <button class="btn small" id="goBeach">Go to Beach Area</button>
+          <button class="btn small" id="goRuins">Go to Ruins Area</button>
+          <a class="btn small" href="#top">Back to top</a>
+        </div>
+
+        <div class="tiny-muted">
+          Map uses OpenStreetMap via Leaflet. Markers are approximate (zoom in for details).
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section alt" id="contact">
+    <div class="container">
+      <div class="section-head">
+        <h2>Contact Us</h2>
+        <p>Send us a message — we’ll get back to you.</p>
+      </div>
+
+      <div class="grid-2">
+        <div class="card">
+          <h3>Send a message</h3>
+
+          <form id="contactForm" class="form">
+            <label>
+              Full name
+              <input name="name" type="text" placeholder="Your name" required maxlength="120" />
+            </label>
+
+            <label>
+              Mobile number
+              <input name="mobile" type="tel" placeholder="+961..." required maxlength="30" />
+            </label>
+
+            <label>
+              Email address
+              <input name="email" type="email" placeholder="name@email.com" required maxlength="160" />
+            </label>
+
+            <label>
+              Message
+              <textarea name="message" rows="5" placeholder="Write your message..." required maxlength="2000"></textarea>
+            </label>
+
+            <button class="btn primary" type="submit" id="contactSubmit">Send</button>
+
+            <div id="contactStatus" class="status" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+
+        <div class="card">
+          <h3>Info</h3>
+          <p class="muted">
+            This form saves your message in a database and sends it to an email address configured in the backend.
+          </p>
+          <ul>
+            <li>Fast response for tourism inquiries</li>
+            <li>Suggestions & partnerships</li>
+            <li>Content corrections and updates</li>
+          </ul>
+
+          <div class="note-box">
+            <strong>Tip:</strong> If email sending is not configured yet, the message will still be saved in the database.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <div class="footer-title">Tyre / صور mini guide</div>
+        <div class="footer-sub">Static site + contact backend (DB + email).</div>
+      </div>
+      <div class="footer-links">
+        <a href="#areas">Areas</a>
+        <a href="#beaches">Beaches</a>
+        <a href="#reach">How to reach</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Leaflet JS -->
+  <script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""
+  ></script>
+
+  <script src="app.js"></script>
+</body>
+</html>
