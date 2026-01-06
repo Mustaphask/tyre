@@ -6,7 +6,7 @@
   <title>Tyre (Sour), Lebanon — Guide</title>
   <meta name="description" content="Tyre / Sour city guide: popular areas, beaches, and how to reach — with a contact form." />
 
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css?v=5.0" />
 
   <!-- Leaflet (OpenStreetMap) -->
   <link
@@ -19,22 +19,31 @@
 
 <body>
   <header class="topbar" id="top">
-    <div class="container topbar-inner">
-      <div class="brand">
-        <div>
-          <div class="brand-title">Tyre / صور</div>
-          <div class="brand-sub">South Lebanon • Coast, history, and beaches</div>
-        </div>
+      <div class="topbar-inner">
+      <div class="topbar-spacer"></div>
+      
+      <div class="brand-center">
+        <div class="brand-title" id="brandTitle">Tyre City</div>
+        <div class="brand-sub" data-en="South Lebanon • Coast, history, and beaches" data-ar="جنوب لبنان • الساحل والتاريخ والشواطئ">South Lebanon • Coast, history, and beaches</div>
       </div>
 
-      <nav class="nav">
-        <a href="#areas">Areas</a>
-        <a href="#beaches">Beaches</a>
-        <a href="#reach">How to reach</a>
-        <a href="#map">Map</a>
-        <a href="#contact">Contact</a>
-      </nav>
+      <div class="topbar-controls">
+        <button class="lang-toggle" id="langToggle" aria-label="Toggle language">
+          <span class="lang-text">EN</span>
+        </button>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode">
+          <span class="theme-icon">🌙</span>
+        </button>
+      </div>
     </div>
+    
+    <nav class="nav">
+      <a href="#areas">Areas</a>
+      <a href="#beaches">Beaches</a>
+      <a href="#reach">How to reach</a>
+      <a href="#map">Map</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
   <!-- HERO -->
@@ -43,21 +52,20 @@
     <div class="hero-overlay" aria-hidden="true"></div>
 
     <div class="container hero-content">
-      <h1>Tyre (Sour), Lebanon</h1>
-      <p>
-        A coastal city famous for wide sandy beaches and rich archaeological heritage.
-        This page highlights key areas, beaches, and how to reach Tyre — plus a quick way to contact us.
+      <h1 data-en="Discover Tyre: Where Ancient History Meets Mediterranean Beauty" data-ar="اكتشف صور: حيث يلتقي التاريخ القديم بجمال البحر المتوسط">Discover Tyre: Where Ancient History Meets Mediterranean Beauty</h1>
+      <p data-en="Step into a world where Phoenician ruins whisper tales of the past, golden beaches stretch along crystal-clear waters, and vibrant local culture comes alive. Experience the perfect blend of history, nature, and authentic Lebanese hospitality in one unforgettable destination." data-ar="ادخل إلى عالم حيث تهمس الآثار الفينيقية بحكايات الماضي، وتمتد الشواطئ الذهبية على طول المياه الصافية، وتنشط الثقافة المحلية. اختبر المزيج المثالي من التاريخ والطبيعة والضيافة اللبنانية الأصيلة في وجهة لا تُنسى.">
+        Step into a world where Phoenician ruins whisper tales of the past, golden beaches stretch along crystal-clear waters, and vibrant local culture comes alive. Experience the perfect blend of history, nature, and authentic Lebanese hospitality in one unforgettable destination.
       </p>
 
       <div class="cta">
-        <a class="btn primary" href="#beaches">Explore beaches</a>
-        <a class="btn" href="#contact">Send a message</a>
+        <a class="btn primary" href="#beaches" data-en="Discover the Beaches" data-ar="اكتشف الشواطئ">Discover the Beaches</a>
+        <button class="btn" id="planVisitBtn" data-en="Plan Your Visit" data-ar="خطط لزيارتك">Plan Your Visit</button>
       </div>
 
       <div class="chips">
-        <span class="chip">Beach vibes</span>
-        <span class="chip">Historic sites</span>
-        <span class="chip">Food & cafés</span>
+        <span class="chip" data-en="UNESCO World Heritage" data-ar="تراث عالمي لليونسكو">UNESCO World Heritage</span>
+        <span class="chip" data-en="Pristine Mediterranean Coast" data-ar="ساحل متوسطي نقي">Pristine Mediterranean Coast</span>
+        <span class="chip" data-en="Authentic Local Culture" data-ar="ثقافة محلية أصيلة">Authentic Local Culture</span>
       </div>
 
       <p class="tiny-note" id="heroNote"></p>
@@ -68,18 +76,18 @@
   <section class="section">
     <div class="container grid-3">
       <div class="card">
-        <h3>Why visit?</h3>
-        <p>Mix a beach day with ruins, old streets, cafés, and sunset views by the sea.</p>
+        <h3 data-en="Why visit?" data-ar="لماذا تزور؟">Why visit?</h3>
+        <p data-en="Mix a beach day with ruins, old streets, cafés, and sunset views by the sea." data-ar="امزج يوم شاطئ مع الآثار والشوارع القديمة والمقاهي ومناظر الغروب بجانب البحر.">Mix a beach day with ruins, old streets, cafés, and sunset views by the sea.</p>
       </div>
 
       <div class="card">
-        <h3>Best season</h3>
-        <p>Late spring to early autumn for swimming. Winter is perfect for calm walks.</p>
+        <h3 data-en="Best season" data-ar="أفضل موسم">Best season</h3>
+        <p data-en="Late spring to early autumn for swimming. Winter is perfect for calm walks." data-ar="أواخر الربيع إلى أوائل الخريف للسباحة. الشتاء مثالي للنزهات الهادئة.">Late spring to early autumn for swimming. Winter is perfect for calm walks.</p>
       </div>
 
       <div class="card">
-        <h3>Local name</h3>
-        <p>Locals commonly say <strong>Sour (صور)</strong>. You’ll see both “Tyre” and “Sour”.</p>
+        <h3 data-en="Local name" data-ar="الاسم المحلي">Local name</h3>
+        <p data-en="Locals commonly say <strong>Sour (صور)</strong>. You'll see both "Tyre" and "Sour"." data-ar="يقول السكان المحليون عادة <strong>صور</strong>. سترى كل من "Tyre" و "صور".">Locals commonly say <strong>Sour (صور)</strong>. You'll see both "Tyre" and "Sour".</p>
       </div>
     </div>
   </section>
@@ -87,45 +95,57 @@
   <!-- AREAS -->
   <section class="section alt" id="areas">
     <div class="container">
-      <div class="section-head">
-        <h2>Popular Areas</h2>
-        <p>Good starting points for walking, food, history, and sea views.</p>
+        <div class="section-head">
+        <h2 data-en="Popular Areas" data-ar="المناطق الشائعة">Popular Areas</h2>
+        <p data-en="Good starting points for walking, food, history, and sea views." data-ar="نقاط انطلاق جيدة للمشي والطعام والتاريخ وإطلالات البحر.">Good starting points for walking, food, history, and sea views.</p>
       </div>
 
       <div class="grid-2">
         <div class="card">
-          <h3>Al-Mina (peninsula & harbor vibe)</h3>
+          <div class="card-image">
+            <img src="assets/area-mosque.jpg" alt="Historic Mosque & Old Quarter" loading="lazy" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&h=600&fit=crop&q=80'" />
+          </div>
+          <h3 data-en="Historic Mosque & Old Quarter" data-ar="المسجد التاريخي والحي القديم">Historic Mosque & Old Quarter</h3>
           <ul>
-            <li>Seaside walks and cafés</li>
-            <li>Coastal views and relaxing evenings</li>
-            <li>Great for photos at sunset</li>
+            <li data-en="Historic stone mosque with minaret" data-ar="مسجد حجري تاريخي مع مئذنة">Historic stone mosque with minaret</li>
+            <li data-en="Traditional hillside village architecture" data-ar="عمارة قرية جبلية تقليدية">Traditional hillside village architecture</li>
+            <li data-en="Cultural and religious heritage site" data-ar="موقع تراثي ثقافي وديني">Cultural and religious heritage site</li>
           </ul>
         </div>
 
         <div class="card">
-          <h3>El-Bass (archaeological zone)</h3>
+          <div class="card-image">
+            <img src="assets/area-ruins.jpg" alt="El-Bass Archaeological Zone" loading="lazy" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1515542622106-78bda8ba0e5b?w=800&h=600&fit=crop&q=80'" />
+          </div>
+          <h3 data-en="El-Bass Archaeological Zone" data-ar="المنطقة الأثرية الباس">El-Bass Archaeological Zone</h3>
           <ul>
-            <li>Major ruins area</li>
-            <li>Great morning visit in summer</li>
-            <li>Comfortable shoes recommended</li>
+            <li data-en="Extensive ancient stone ruins" data-ar="آثار حجرية قديمة واسعة">Extensive ancient stone ruins</li>
+            <li data-en="Well-preserved archways and columns" data-ar="أقواس وأعمدة محفوظة جيداً">Well-preserved archways and columns</li>
+            <li data-en="UNESCO World Heritage site" data-ar="موقع تراث عالمي لليونسكو">UNESCO World Heritage site</li>
           </ul>
         </div>
 
         <div class="card">
-          <h3>Old streets & local markets</h3>
+          <div class="card-image">
+            <img src="assets/area-alley.jpg" alt="Old Streets & Colorful Alleys" loading="lazy" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1517487881594-2787fef5ebf7?w=800&h=600&fit=crop&q=80'" />
+          </div>
+          <h3 data-en="Old Streets & Colorful Alleys" data-ar="الشوارع القديمة والأزقة الملونة">Old Streets & Colorful Alleys</h3>
           <ul>
-            <li>Local shops and snacks</li>
-            <li>Nice evening stroll</li>
-            <li>Authentic city feel</li>
+            <li data-en="Charming narrow alleyways" data-ar="أزقة ضيقة ساحرة">Charming narrow alleyways</li>
+            <li data-en="Colorful aged buildings and doors" data-ar="مباني وأبواب ملونة قديمة">Colorful aged buildings and doors</li>
+            <li data-en="Authentic local atmosphere" data-ar="جو محلي أصيل">Authentic local atmosphere</li>
           </ul>
         </div>
 
         <div class="card">
-          <h3>Ras El Ain area</h3>
+          <div class="card-image">
+            <img src="assets/area-hillside.jpg" alt="Hillside Village Views" loading="lazy" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=600&fit=crop&q=80'" />
+          </div>
+          <h3 data-en="Hillside Village Views" data-ar="إطلالات القرية الجبلية">Hillside Village Views</h3>
           <ul>
-            <li>Quieter vibe</li>
-            <li>Green spots and calm breaks</li>
-            <li>Nice stop on the way in/out</li>
+            <li data-en="Scenic hillside architecture" data-ar="عمارة جبلية خلابة">Scenic hillside architecture</li>
+            <li data-en="Red-tiled roofs and stone houses" data-ar="أسقف حمراء وبيوت حجرية">Red-tiled roofs and stone houses</li>
+            <li data-en="Panoramic city and sea views" data-ar="إطلالات بانورامية على المدينة والبحر">Panoramic city and sea views</li>
           </ul>
         </div>
       </div>
@@ -136,44 +156,56 @@
   <section class="section" id="beaches">
     <div class="container">
       <div class="section-head">
-        <h2>Beaches</h2>
-        <p>From wide sandy stretches to lively summer spots.</p>
+        <h2 data-en="Beaches" data-ar="الشواطئ">Beaches</h2>
+        <p data-en="From wide sandy stretches to lively summer spots." data-ar="من امتدادات رملية واسعة إلى أماكن صيفية حيوية.">From wide sandy stretches to lively summer spots.</p>
       </div>
 
       <div class="grid-2">
         <div class="card">
-          <h3>Nature-style sandy coast</h3>
+          <div class="card-image">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Tyre_Beach_Lebanon.jpg/800px-Tyre_Beach_Lebanon.jpg" alt="Sandy beach coast" loading="lazy" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&h=600&fit=crop&q=80'" />
+          </div>
+          <h3 data-en="Nature-style sandy coast" data-ar="ساحل رملي على الطبيعة">Nature-style sandy coast</h3>
           <ul>
-            <li>Long walks on the sand</li>
-            <li>Quieter atmosphere</li>
-            <li>Perfect for sunrise / sunset</li>
+            <li data-en="Long walks on the sand" data-ar="نزهات طويلة على الرمال">Long walks on the sand</li>
+            <li data-en="Quieter atmosphere" data-ar="جو أكثر هدوءاً">Quieter atmosphere</li>
+            <li data-en="Perfect for sunrise / sunset" data-ar="مثالي لشروق الشمس / الغروب">Perfect for sunrise / sunset</li>
           </ul>
         </div>
 
         <div class="card">
-          <h3>Public beach strip</h3>
+          <div class="card-image">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Tyre_coastline.jpg/800px-Tyre_coastline.jpg" alt="Public beach" loading="lazy" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1505142468610-359e7d316be0?w=800&h=600&fit=crop&q=80'" />
+          </div>
+          <h3 data-en="Public beach strip" data-ar="شريط الشاطئ العام">Public beach strip</h3>
           <ul>
-            <li>Busy in summer</li>
-            <li>Good for groups</li>
-            <li>Arrive early on weekends</li>
+            <li data-en="Busy in summer" data-ar="مزدحم في الصيف">Busy in summer</li>
+            <li data-en="Good for groups" data-ar="جيد للمجموعات">Good for groups</li>
+            <li data-en="Arrive early on weekends" data-ar="الوصول مبكراً في عطلة نهاية الأسبوع">Arrive early on weekends</li>
           </ul>
         </div>
 
         <div class="card">
-          <h3>Seaside rocks & viewpoints</h3>
+          <div class="card-image">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Tyre_Mediterranean_Sea.jpg/800px-Tyre_Mediterranean_Sea.jpg" alt="Seaside rocks" loading="lazy" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=600&fit=crop&q=80'" />
+          </div>
+          <h3 data-en="Seaside rocks & viewpoints" data-ar="صخور بحرية ونقاط مشاهدة">Seaside rocks & viewpoints</h3>
           <ul>
-            <li>Best for photos</li>
-            <li>Sea breeze and relaxing vibes</li>
-            <li>Great for winter walks too</li>
+            <li data-en="Best for photos" data-ar="الأفضل للصور">Best for photos</li>
+            <li data-en="Sea breeze and relaxing vibes" data-ar="نسيم البحر وأجواء مريحة">Sea breeze and relaxing vibes</li>
+            <li data-en="Great for winter walks too" data-ar="رائع للنزهات الشتوية أيضاً">Great for winter walks too</li>
           </ul>
         </div>
 
         <div class="card">
-          <h3>Beach + history combo</h3>
+          <div class="card-image">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Tyre_Beach_Ruins.jpg/800px-Tyre_Beach_Ruins.jpg" alt="Beach and ruins" loading="lazy" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1515542622106-78bda8ba0e5b?w=800&h=600&fit=crop&q=80'" />
+          </div>
+          <h3 data-en="Beach + history combo" data-ar="مزيج الشاطئ + التاريخ">Beach + history combo</h3>
           <ul>
-            <li>Morning: ruins</li>
-            <li>Afternoon: beach</li>
-            <li>Evening: food & cafés</li>
+            <li data-en="Morning: ruins" data-ar="الصباح: الآثار">Morning: ruins</li>
+            <li data-en="Afternoon: beach" data-ar="بعد الظهر: الشاطئ">Afternoon: beach</li>
+            <li data-en="Evening: food & cafés" data-ar="المساء: الطعام والمقاهي">Evening: food & cafés</li>
           </ul>
         </div>
       </div>
@@ -184,31 +216,31 @@
   <section class="section alt" id="reach">
     <div class="container">
       <div class="section-head">
-        <h2>How to reach Tyre</h2>
-        <p>Quick route buttons + typical driving approach.</p>
+        <h2 data-en="How to reach Tyre" data-ar="كيف تصل إلى صور">How to reach Tyre</h2>
+        <p data-en="Quick route buttons + typical driving approach." data-ar="أزرار المسار السريع + نهج القيادة النموذجي.">Quick route buttons + typical driving approach.</p>
       </div>
 
       <div class="grid-2">
         <div class="card">
-          <h3>By car</h3>
+          <h3 data-en="By car" data-ar="بالسيارة">By car</h3>
           <ul>
-            <li>Fastest and most convenient option</li>
-            <li>Routes typically pass through Saida (Sidon) depending on traffic</li>
-            <li>Plan extra time on summer weekends</li>
+            <li data-en="Fastest and most convenient option" data-ar="أسرع وأكثر خيارات ملاءمة">Fastest and most convenient option</li>
+            <li data-en="Routes typically pass through Saida (Sidon) depending on traffic" data-ar="عادة ما تمر الطرق عبر صيدا حسب حركة المرور">Routes typically pass through Saida (Sidon) depending on traffic</li>
+            <li data-en="Plan extra time on summer weekends" data-ar="خطط لوقت إضافي في عطلات نهاية الأسبوع الصيفية">Plan extra time on summer weekends</li>
           </ul>
 
           <div class="links">
-            <a id="btnBeirutToTyre" class="textlink" target="_blank" rel="noopener">Open Beirut → Tyre in Google Maps</a>
-            <a id="btnOSMTyre" class="textlink" target="_blank" rel="noopener">Open Tyre in OpenStreetMap</a>
+            <a id="btnBeirutToTyre" class="textlink" target="_blank" rel="noopener" data-en="Open Beirut → Tyre in Google Maps" data-ar="افتح بيروت → صور في خرائط جوجل">Open Beirut → Tyre in Google Maps</a>
+            <a id="btnOSMTyre" class="textlink" target="_blank" rel="noopener" data-en="Open Tyre in OpenStreetMap" data-ar="افتح صور في OpenStreetMap">Open Tyre in OpenStreetMap</a>
           </div>
         </div>
 
         <div class="card">
-          <h3>By service / shared taxi</h3>
+          <h3 data-en="By service / shared taxi" data-ar="بخدمة / تاكسي مشترك">By service / shared taxi</h3>
           <ul>
-            <li>Availability depends on time and season</li>
-            <li>Ask for “Sour / صور” as destination</li>
-            <li>Confirm drop-off point (center, beach, or hotel)</li>
+            <li data-en="Availability depends on time and season" data-ar="التوفر يعتمد على الوقت والموسم">Availability depends on time and season</li>
+            <li data-en="Ask for "Sour / صور" as destination" data-ar="اطلب "صور" كوجهة">Ask for "Sour / صور" as destination</li>
+            <li data-en="Confirm drop-off point (center, beach, or hotel)" data-ar="أكد نقطة النزول (المركز، الشاطئ، أو الفندق)">Confirm drop-off point (center, beach, or hotel)</li>
           </ul>
         </div>
       </div>
@@ -219,96 +251,323 @@
   <section class="section" id="map">
     <div class="container">
       <div class="section-head">
-        <h2>Interactive Map</h2>
-        <p>Click markers for notes. Use buttons to jump to key places.</p>
+        <h2 data-en="Interactive Map" data-ar="خريطة تفاعلية">Interactive Map</h2>
+        <p data-en="Click markers for notes. Use buttons to jump to key places." data-ar="انقر على العلامات للحصول على الملاحظات. استخدم الأزرار للانتقال إلى الأماكن الرئيسية.">Click markers for notes. Use buttons to jump to key places.</p>
       </div>
 
       <div class="map-card">
-        <div id="mapBox" class="map"></div>
+        <div id="mapBox" class="map-small"></div>
 
         <div class="map-actions">
-          <button class="btn small" id="centerTyre">Center on Tyre</button>
-          <button class="btn small" id="goBeach">Go to Beach Area</button>
-          <button class="btn small" id="goRuins">Go to Ruins Area</button>
-          <a class="btn small" href="#top">Back to top</a>
+          <button class="btn small" id="centerTyre" data-en="Center on Tyre" data-ar="التركيز على صور">Center on Tyre</button>
+          <button class="btn small" id="goBeach" data-en="Go to Beach Area" data-ar="انتقل إلى منطقة الشاطئ">Go to Beach Area</button>
+          <button class="btn small" id="goRuins" data-en="Go to Ruins Area" data-ar="انتقل إلى منطقة الآثار">Go to Ruins Area</button>
+          <a class="btn small" href="#top" data-en="Back to top" data-ar="العودة للأعلى">Back to top</a>
         </div>
 
-        <div class="tiny-muted">
+        <div class="tiny-muted" data-en="Map uses OpenStreetMap via Leaflet. Markers are approximate (zoom in for details)." data-ar="تستخدم الخريطة OpenStreetMap عبر Leaflet. العلامات تقريبية (قم بالتكبير للتفاصيل).">
           Map uses OpenStreetMap via Leaflet. Markers are approximate (zoom in for details).
         </div>
       </div>
     </div>
   </section>
 
-  <!-- CONTACT -->
-  <section class="section alt" id="contact">
+  <!-- TESTIMONIALS -->
+  <section class="section" id="testimonials">
     <div class="container">
       <div class="section-head">
-        <h2>Contact Us</h2>
-        <p>Send us a message — we’ll get back to you.</p>
+        <h2 data-en="What Visitors Say" data-ar="ماذا يقول الزوار">What Visitors Say</h2>
+        <p data-en="Real experiences from travelers who explored Tyre." data-ar="تجارب حقيقية من المسافرين الذين استكشفوا صور.">Real experiences from travelers who explored Tyre.</p>
       </div>
 
+      <div class="grid-3">
+        <div class="card testimonial">
+          <div class="testimonial-header">
+            <div class="testimonial-avatar">SM</div>
+            <div>
+              <div class="testimonial-name">Sarah Mitchell</div>
+              <div class="testimonial-location">🇬🇧 United Kingdom</div>
+            </div>
+          </div>
+          <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+          <p class="testimonial-text">"Absolutely breathtaking! The combination of ancient ruins and pristine beaches is unlike anything I've seen. The locals were incredibly welcoming, and the food was amazing. Tyre exceeded all my expectations."</p>
+        </div>
+
+        <div class="card testimonial">
+          <div class="testimonial-header">
+            <div class="testimonial-avatar">JM</div>
+            <div>
+              <div class="testimonial-name">Jean-Pierre Martin</div>
+              <div class="testimonial-location">🇫🇷 France</div>
+            </div>
+          </div>
+          <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+          <p class="testimonial-text">"A hidden gem in the Mediterranean! The archaeological sites are fascinating, and the beaches are perfect for relaxation. The sunset views from Al-Mina are unforgettable. Highly recommend visiting!"</p>
+        </div>
+
+        <div class="card testimonial">
+          <div class="testimonial-header">
+            <div class="testimonial-avatar">AK</div>
+            <div>
+              <div class="testimonial-name">Ahmed Khalil</div>
+              <div class="testimonial-location">🇪🇬 Egypt</div>
+            </div>
+          </div>
+          <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+          <p class="testimonial-text">"The perfect blend of history and nature. Walking through the ruins in the morning and then relaxing on the beach in the afternoon was magical. The city has such a rich heritage, and the people are wonderful."</p>
+        </div>
+
+        <div class="card testimonial">
+          <div class="testimonial-header">
+            <div class="testimonial-avatar">LR</div>
+            <div>
+              <div class="testimonial-name">Lisa Rodriguez</div>
+              <div class="testimonial-location">🇪🇸 Spain</div>
+            </div>
+          </div>
+          <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+          <p class="testimonial-text">"One of the most beautiful coastal cities I've visited. The UNESCO World Heritage sites are impressive, and the Mediterranean waters are crystal clear. Perfect for both history lovers and beach enthusiasts!"</p>
+        </div>
+
+        <div class="card testimonial">
+          <div class="testimonial-header">
+            <div class="testimonial-avatar">DW</div>
+            <div>
+              <div class="testimonial-name">David Wilson</div>
+              <div class="testimonial-location">🇺🇸 United States</div>
+            </div>
+          </div>
+          <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+          <p class="testimonial-text">"Tyre is a must-visit destination! The archaeological sites tell incredible stories, and the beaches are pristine. The local markets offer authentic experiences. I'll definitely be back!"</p>
+        </div>
+
+        <div class="card testimonial">
+          <div class="testimonial-header">
+            <div class="testimonial-avatar">MC</div>
+            <div>
+              <div class="testimonial-name">Maria Costa</div>
+              <div class="testimonial-location">🇮🇹 Italy</div>
+            </div>
+          </div>
+          <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+          <p class="testimonial-text">"Stunning architecture, beautiful beaches, and warm hospitality. The old streets are charming, and the seafood is delicious. Tyre offers an authentic Lebanese experience that I'll cherish forever."</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT & TRAVEL GUIDES -->
+  <section class="section alt" id="contact">
+    <div class="container">
       <div class="grid-2">
+        <!-- Contact Us Form -->
         <div class="card">
-          <h3>Send a message</h3>
-
-          <form id="contactForm" class="form">
-            <label>
-              Full name
-              <input name="name" type="text" placeholder="Your name" required maxlength="120" />
-            </label>
-
-            <label>
-              Mobile number
-              <input name="mobile" type="tel" placeholder="+961..." required maxlength="30" />
-            </label>
-
-            <label>
-              Email address
-              <input name="email" type="email" placeholder="name@email.com" required maxlength="160" />
-            </label>
-
-            <label>
-              Message
-              <textarea name="message" rows="5" placeholder="Write your message..." required maxlength="2000"></textarea>
-            </label>
-
-            <button class="btn primary" type="submit" id="contactSubmit">Send</button>
-
-            <div id="contactStatus" class="status" role="status" aria-live="polite"></div>
+          <h3 data-en="Contact Us" data-ar="اتصل بنا">Contact Us</h3>
+          <p data-en="Send us a message and we'll get back to you soon!" data-ar="أرسل لنا رسالة وسنرد عليك قريباً!">Send us a message and we'll get back to you soon!</p>
+          
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <input type="text" id="contactName" name="name" placeholder="Your Name" data-placeholder-en="Your Name" data-placeholder-ar="اسمك" required />
+            </div>
+            <div class="form-group">
+              <input type="email" id="contactEmail" name="email" placeholder="Your Email" data-placeholder-en="Your Email" data-placeholder-ar="بريدك الإلكتروني" required />
+            </div>
+            <div class="form-group">
+              <textarea id="contactMessage" name="message" rows="4" placeholder="Your Message" data-placeholder-en="Your Message" data-placeholder-ar="رسالتك" required></textarea>
+            </div>
+            <button type="submit" class="btn primary" data-en="Send Message" data-ar="إرسال الرسالة">Send Message</button>
           </form>
         </div>
 
+        <!-- Travel Guides -->
         <div class="card">
-          <h3>Info</h3>
-          <p class="muted">
-            This form saves your message in a database and sends it to an email address configured in the backend.
-          </p>
-          <ul>
-            <li>Fast response for tourism inquiries</li>
-            <li>Suggestions & partnerships</li>
-            <li>Content corrections and updates</li>
-          </ul>
+          <h3 data-en="Connect to Our Travel Guides" data-ar="تواصل مع مرشدينا السياحيين">Connect to Our Travel Guides</h3>
+          <p data-en="Expert local guides ready to show you around Tyre" data-ar="مرشدون محليون خبراء جاهزون لإرشادك في صور">Expert local guides ready to show you around Tyre</p>
+          
+          <div class="guides-contact">
+            <div class="guide-contact-card">
+              <div class="guide-contact-header">
+                <div class="guide-contact-avatar">KH</div>
+                <div>
+                  <div class="guide-contact-name" data-en="Khalil Hassan" data-ar="خليل حسن">Khalil Hassan</div>
+                  <div class="guide-contact-title" data-en="Historical Guide" data-ar="مرشد تاريخي">Historical Guide</div>
+                </div>
+              </div>
+              <div class="guide-contact-info">
+                <a href="tel:+96131234567" class="guide-contact-link">
+                  <span data-en="📱 +961 3 123 4567" data-ar="📱 +961 3 123 4567">📱 +961 3 123 4567</span>
+                </a>
+                <a href="mailto:khalil@tyreguides.com" class="guide-contact-link">
+                  <span data-en="✉️ khalil@tyreguides.com" data-ar="✉️ khalil@tyreguides.com">✉️ khalil@tyreguides.com</span>
+                </a>
+              </div>
+            </div>
 
-          <div class="note-box">
-            <strong>Tip:</strong> If email sending is not configured yet, the message will still be saved in the database.
+            <div class="guide-contact-card">
+              <div class="guide-contact-header">
+                <div class="guide-contact-avatar">LM</div>
+                <div>
+                  <div class="guide-contact-name" data-en="Layla Mansour" data-ar="ليلى منصور">Layla Mansour</div>
+                  <div class="guide-contact-title" data-en="Beach & Nature Guide" data-ar="مرشدة شاطئ وطبيعة">Beach & Nature Guide</div>
+                </div>
+              </div>
+              <div class="guide-contact-info">
+                <a href="tel:+96170123456" class="guide-contact-link">
+                  <span data-en="📱 +961 70 123 456" data-ar="📱 +961 70 123 456">📱 +961 70 123 456</span>
+                </a>
+                <a href="mailto:layla@tyreguides.com" class="guide-contact-link">
+                  <span data-en="✉️ layla@tyreguides.com" data-ar="✉️ layla@tyreguides.com">✉️ layla@tyreguides.com</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="guide-contact-card">
+              <div class="guide-contact-header">
+                <div class="guide-contact-avatar">MA</div>
+                <div>
+                  <div class="guide-contact-name" data-en="Mohammed Al-Ahmad" data-ar="محمد الأحمد">Mohammed Al-Ahmad</div>
+                  <div class="guide-contact-title" data-en="City & Culture Guide" data-ar="مرشد المدينة والثقافة">City & Culture Guide</div>
+                </div>
+              </div>
+              <div class="guide-contact-info">
+                <a href="tel:+96176123456" class="guide-contact-link">
+                  <span data-en="📱 +961 76 123 456" data-ar="📱 +961 76 123 456">📱 +961 76 123 456</span>
+                </a>
+                <a href="mailto:mohammed@tyreguides.com" class="guide-contact-link">
+                  <span data-en="✉️ mohammed@tyreguides.com" data-ar="✉️ mohammed@tyreguides.com">✉️ mohammed@tyreguides.com</span>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <footer class="footer">
-    <div class="container footer-inner">
-      <div>
-        <div class="footer-title">Tyre / صور mini guide</div>
-        <div class="footer-sub">Static site + contact backend (DB + email).</div>
+  <!-- PLAN VISIT MODAL -->
+  <div id="planVisitModal" class="modal">
+    <div class="modal-content">
+      <span class="modal-close">&times;</span>
+      <h2>Plan Your Visit to Tyre</h2>
+      
+      <div class="modal-grid">
+        <div class="modal-section">
+          <h3>📅 Select Your Dates</h3>
+          <input type="date" id="visitDate" class="date-input" />
+          <input type="date" id="endDate" class="date-input" />
+          <p class="modal-note">Choose your arrival and departure dates</p>
+        </div>
+
+        <div class="modal-section">
+          <h3>👥 Number of Travelers</h3>
+          <div class="traveler-input">
+            <label>
+              Adults
+              <input type="number" id="adults" min="1" value="2" class="number-input" />
+            </label>
+            <label>
+              Children
+              <input type="number" id="children" min="0" value="0" class="number-input" />
+            </label>
+          </div>
+        </div>
       </div>
-      <div class="footer-links">
-        <a href="#areas">Areas</a>
-        <a href="#beaches">Beaches</a>
-        <a href="#reach">How to reach</a>
-        <a href="#contact">Contact</a>
+
+      <div class="modal-section">
+        <h3>🗺️ Tourist Guides & Tours</h3>
+        <div class="guides-list">
+          <div class="guide-item">
+            <strong>Historical Walking Tour</strong>
+            <p>Explore ancient Phoenician ruins and archaeological sites with a certified guide. Duration: 3 hours</p>
+            <span class="guide-price">$45 per person</span>
+          </div>
+          <div class="guide-item">
+            <strong>Beach & Coastal Tour</strong>
+            <p>Discover the best beaches and coastal viewpoints. Includes transportation. Duration: 4 hours</p>
+            <span class="guide-price">$60 per person</span>
+          </div>
+          <div class="guide-item">
+            <strong>Full Day City Experience</strong>
+            <p>Complete tour of Tyre including ruins, beaches, markets, and local cuisine. Duration: 8 hours</p>
+            <span class="guide-price">$120 per person</span>
+          </div>
+          <div class="guide-item">
+            <strong>Sunset Photography Tour</strong>
+            <p>Perfect for photographers. Visit Al-Mina peninsula and capture stunning sunset views. Duration: 2 hours</p>
+            <span class="guide-price">$35 per person</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-actions">
+        <button class="btn primary" id="bookTourBtn">Book Selected Tours</button>
+        <button class="btn" id="downloadGuideBtn">Download Travel Guide PDF</button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-main">
+          <div class="footer-brand">
+          <div class="footer-title" id="footerTitle">Tyre City</div>
+          <div class="footer-sub" data-en="Discover the ancient Phoenician city on the Mediterranean coast" data-ar="اكتشف المدينة الفينيقية القديمة على ساحل البحر المتوسط">Discover the ancient Phoenician city on the Mediterranean coast</div>
+        </div>
+        
+        <div class="footer-grid">
+          <div class="footer-column">
+            <h4 data-en="Quick Links" data-ar="روابط سريعة">Quick Links</h4>
+            <ul>
+              <li><a href="#areas" data-en="Areas" data-ar="المناطق">Areas</a></li>
+              <li><a href="#beaches" data-en="Beaches" data-ar="الشواطئ">Beaches</a></li>
+              <li><a href="#reach" data-en="How to reach" data-ar="كيف تصل">How to reach</a></li>
+              <li><a href="#map" data-en="Map" data-ar="الخريطة">Map</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-column">
+            <h4 data-en="Information" data-ar="معلومات">Information</h4>
+            <ul>
+              <li><a href="#testimonials" data-en="Visitor Reviews" data-ar="آراء الزوار">Visitor Reviews</a></li>
+              <li><a href="#contact" data-en="Contact Us" data-ar="اتصل بنا">Contact Us</a></li>
+              <li><span data-en="UNESCO World Heritage Site" data-ar="موقع تراث عالمي لليونسكو">UNESCO World Heritage Site</span></li>
+            </ul>
+          </div>
+          
+          <div class="footer-column">
+            <h4 data-en="Connect" data-ar="تواصل معنا">Connect</h4>
+            <div class="footer-social">
+              <p data-en="Follow us for updates and travel tips" data-ar="تابعنا للحصول على التحديثات ونصائح السفر">Follow us for updates and travel tips</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p data-en="© 2024 Tyre City Tourism Guide. All rights reserved." data-ar="© 2024 دليل سياحة مدينة صور. جميع الحقوق محفوظة.">© 2024 Tyre City Tourism Guide. All rights reserved.</p>
+        <p class="footer-credit" data-en="Made with ❤️ for Tyre" data-ar="صُنع بـ ❤️ لصور">Made with ❤️ for Tyre</p>
+        <div class="social-icons">
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+          </a>
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Facebook">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+            </svg>
+          </a>
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Twitter/X">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+            </svg>
+          </a>
+          <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="TikTok">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
+            </svg>
+          </a>
+        </div>
       </div>
     </div>
   </footer>
